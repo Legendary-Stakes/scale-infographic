@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Legendary Stakes — The Biggest Sport No One Has Monetized</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Franklin:wght@300;400;500;600;700&family=Saira+Condensed:wght@500;600;700;800&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
-    --navy: #1B2A4A;
-    --gold: #C8A951;
-    --light-gold: #FDF8EC;
-    --dark-gray: #333333;
-    --med-gray: #666666;
-    --light-bg: #F5F3EE;
+    --navy: #14110C;
+    --gold: #C9A02C;
+    --light-gold: #F4EFE3;
+    --dark-gray: #2B2517;
+    --med-gray: #6A6253;
+    --light-bg: #F4EFE3;
     --white: #FFFFFF;
   }
 
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     background: var(--white);
     color: var(--dark-gray);
     max-width: 1000px;
@@ -30,7 +30,7 @@
 
   /* HEADER */
   .header {
-    background: linear-gradient(135deg, var(--navy) 0%, #2C3E6A 100%);
+    background: linear-gradient(135deg, var(--navy) 0%, #2B2517 100%);
     padding: 60px 50px 50px;
     text-align: center;
     position: relative;
@@ -41,7 +41,7 @@
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--gold), #E8D5A0, var(--gold));
+    background: linear-gradient(90deg, var(--gold), #E3BC27, var(--gold));
   }
   .header h1 {
     font-size: 42px;
@@ -95,7 +95,7 @@
     border-radius: 12px;
     padding: 28px 24px;
     text-align: center;
-    border: 1px solid #E8E0CC;
+    border: 1px solid #B4AC9C;
   }
   .hero-stat.highlight {
     background: var(--light-gold);
@@ -164,8 +164,8 @@
   }
   .bar-fill.league { background: var(--navy); opacity: 0.7; }
   .bar-fill.combined { background: var(--navy); }
-  .bar-fill.ls { background: linear-gradient(90deg, var(--gold), #DFC06A); }
-  .bar-fill.ls-potential { background: linear-gradient(90deg, #E8D5A0, #DFC06A); }
+  .bar-fill.ls { background: linear-gradient(90deg, var(--gold), #A8801C); }
+  .bar-fill.ls-potential { background: linear-gradient(90deg, #E3BC27, #A8801C); }
 
   /* STAKEHOLDER SECTION */
   .multiplier-grid {
@@ -179,7 +179,7 @@
     border-radius: 10px;
     padding: 20px 12px;
     text-align: center;
-    border: 1px solid #E8E0CC;
+    border: 1px solid #B4AC9C;
   }
   .multiplier-card .icon {
     font-size: 28px;
@@ -242,8 +242,8 @@
     padding: 28px 24px;
   }
   .cost-card.traditional {
-    background: #F0ECEC;
-    border: 1px solid #D5CCCC;
+    background: #EAE4D6;
+    border: 1px solid #B4AC9C;
   }
   .cost-card.ls-model {
     background: var(--light-gold);
@@ -263,8 +263,8 @@
     font-size: 13px;
     font-weight: 500;
   }
-  .cost-item .icon-x { color: #C0392B; font-weight: 800; font-size: 16px; }
-  .cost-item .icon-check { color: #27AE60; font-weight: 800; font-size: 16px; }
+  .cost-item .icon-x { color: #5E2C1E; font-weight: 800; font-size: 16px; }
+  .cost-item .icon-check { color: #A8801C; font-weight: 800; font-size: 16px; }
 
   /* TIMELINE */
   .timeline {
@@ -311,7 +311,7 @@
 
   /* BOTTOM LINE */
   .bottom-line {
-    background: linear-gradient(135deg, var(--navy) 0%, #2C3E6A 100%);
+    background: linear-gradient(135deg, var(--navy) 0%, #2B2517 100%);
     padding: 50px;
     text-align: center;
     position: relative;
@@ -321,7 +321,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--gold), #E8D5A0, var(--gold));
+    background: linear-gradient(90deg, var(--gold), #E3BC27, var(--gold));
   }
   .bottom-line blockquote {
     font-size: 22px;
@@ -354,6 +354,17 @@
     margin-top: 8px;
     line-height: 1.4;
   }
+
+  /* LS Brand System v1.0 */
+  .header h1, .section h2, .bottom-line blockquote, .cost-card h3 { font-family: 'Cormorant Garamond', serif; letter-spacing: 0; }
+  .header h1 { font-weight: 700; font-size: 46px; }
+  .section h2 { font-weight: 700; font-size: 32px; }
+  .bottom-line blockquote { font-weight: 600; font-size: 26px; }
+  .hero-stat .number, .vs-block .big-num, .bar-fill span, .timeline-item .rev, .timeline-item .year, .section-title, .hero-stat .label, .bar-label, .multiplier-card .role, .bottom-line .attribution { font-family: 'Saira Condensed', sans-serif; }
+  .hero-stat .number, .vs-block .big-num { font-weight: 800; }
+  .section-title { color: var(--gold-deep, #A8801C); }
+  .multiplier-card .icon.stamp { display:inline-block; font-family:'Saira Condensed',sans-serif; font-weight:800; font-size:18px; letter-spacing:1px; color:#A8801C; border:2px solid #C9A02C; border-radius:4px; padding:6px 10px; margin-bottom:10px; }
+  .header .subtitle { color: #E3BC27; }
 </style>
 </head>
 <body>
@@ -372,7 +383,7 @@
   <div class="hero-stat-row">
     <div class="hero-stat">
       <div class="number">6.6M</div>
-      <div class="label">U.S. Horses</div>
+      <div class="label">U.S. Horses (AHC)</div>
     </div>
     <div class="hero-stat">
       <div class="number">$177B</div>
@@ -383,12 +394,12 @@
       <div class="label">Jobs Supported</div>
     </div>
     <div class="hero-stat highlight">
-      <div class="number">54,532</div>
+      <div class="number">60,515+</div>
       <div class="label">LS Eligible Horses Today</div>
     </div>
     <div class="hero-stat highlight">
-      <div class="number">150K+</div>
-      <div class="label">Projected With Sire Enrollment</div>
+      <div class="number">132K+</div>
+      <div class="label">Projected With 558 Enrolled Sires</div>
     </div>
   </div>
   <p class="footnote">Sources: American Horse Council; AQHA, APHA, ApHC official registries; Legendary Stakes internal enrollment data.</p>
@@ -436,11 +447,11 @@
     </div>
     <div class="bar-row">
       <div class="bar-label" style="font-weight:800; color:var(--gold)">LS (CURRENT)</div>
-      <div class="bar-track"><div class="bar-fill ls" style="width: 60%"><span>54,000</span></div></div>
+      <div class="bar-track"><div class="bar-fill ls" style="width: 60%"><span>60,515+</span></div></div>
     </div>
     <div class="bar-row">
       <div class="bar-label" style="font-weight:800; color:var(--gold)">LS (POTENTIAL)</div>
-      <div class="bar-track"><div class="bar-fill ls-potential" style="width: 100%"><span>150,000+</span></div></div>
+      <div class="bar-track"><div class="bar-fill ls-potential" style="width: 100%"><span>132,000+</span></div></div>
     </div>
   </div>
   <p class="footnote">Pro sports data: Forbes, Sportico, league reports (2024–25). LS data: Internal enrollment records.</p>
@@ -451,34 +462,34 @@
 <!-- STAKEHOLDER MULTIPLIER -->
 <div class="section">
   <div class="section-title">The Multiplier Effect</div>
-  <h2>Every Horse = 4–6 Humans with Skin in the Game</h2>
+  <h2>Every Horse = 5 Stakeholders with Skin in the Game</h2>
   <p style="font-size:14px; color:var(--med-gray); margin-bottom:16px; line-height:1.6;">In traditional sports, 1 athlete = 1 person. In the equine world, every horse represents a cluster of stakeholders with direct financial interest in competitive outcomes.</p>
 
   <div class="multiplier-grid">
     <div class="multiplier-card">
-      <div class="icon">&#128176;</div>
-      <div class="role">Owner</div>
+      <div class="icon stamp">HO</div>
+      <div class="role">Horse Owner</div>
       <div class="desc">Funds training, competition &amp; care</div>
     </div>
     <div class="multiplier-card">
-      <div class="icon">&#127942;</div>
-      <div class="role">Trainer</div>
-      <div class="desc">Livelihood tied to horse success</div>
-    </div>
-    <div class="multiplier-card">
-      <div class="icon">&#127943;</div>
+      <div class="icon stamp">RI</div>
       <div class="role">Rider</div>
       <div class="desc">Competes &amp; earns prize money</div>
     </div>
     <div class="multiplier-card">
-      <div class="icon">&#129412;</div>
+      <div class="icon stamp">BR</div>
       <div class="role">Breeder</div>
       <div class="desc">Reputation &amp; fees tied to offspring</div>
     </div>
     <div class="multiplier-card">
-      <div class="icon">&#128200;</div>
-      <div class="role">Sire/Dam Owner</div>
-      <div class="desc">Generational financial interest</div>
+      <div class="icon stamp">DO</div>
+      <div class="role">Dam Owner</div>
+      <div class="desc">Earns on every entry by her offspring</div>
+    </div>
+    <div class="multiplier-card">
+      <div class="icon stamp">SO</div>
+      <div class="role">Sire Owner</div>
+      <div class="desc">Lifetime royalties across every foal</div>
     </div>
   </div>
 
@@ -490,13 +501,13 @@
     </div>
     <div class="vs-divider">vs.</div>
     <div class="vs-block">
-      <div class="big-num" style="color:var(--gold)">218,000+</div>
-      <div class="sub">LS Direct Stakeholders Today<br>(54,532 horses × 4 per horse)</div>
+      <div class="big-num" style="color:var(--gold)">302,000+</div>
+      <div class="sub">LS Direct Stakeholders Today<br>(60,515 horses × 5 per horse)</div>
     </div>
     <div class="vs-divider">&rarr;</div>
     <div class="vs-block">
-      <div class="big-num" style="color:var(--gold)">600,000+</div>
-      <div class="sub">LS Projected Stakeholders<br>(150K horses × 4 per horse)</div>
+      <div class="big-num" style="color:var(--gold)">660,000+</div>
+      <div class="sub">LS Projected Stakeholders<br>(132K horses × 5 per horse)</div>
     </div>
   </div>
 </div>
@@ -598,10 +609,10 @@
   <div class="hero-stat-row">
     <div class="hero-stat highlight">
       <div class="number">$1M+</div>
-      <div class="label">Revenue (2024-2025)</div>
+      <div class="label">Gross Revenue (2024-2025)</div>
     </div>
     <div class="hero-stat highlight">
-      <div class="number">477</div>
+      <div class="number">446</div>
       <div class="label">Enrolled Sires</div>
     </div>
     <div class="hero-stat">
@@ -618,26 +629,41 @@
     </div>
   </div>
 
+  <div class="hero-stat-row">
+    <div class="hero-stat highlight">
+      <div class="number">6.6M</div>
+      <div class="label">Horses in the Legendary Stakes Record<br>~3.8M Linked to Sire, Dam, Owner &amp; Breeder</div>
+    </div>
+    <div class="hero-stat highlight">
+      <div class="number">$475K+</div>
+      <div class="label">Paid Out to Horsemen<br>Through 2025</div>
+    </div>
+    <div class="hero-stat highlight">
+      <div class="number">60,515+</div>
+      <div class="label">Eligible Horses<br>Growing Daily</div>
+    </div>
+  </div>
+
   <div style="display:flex; gap:24px; margin-top:20px;">
-    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #E8E0CC; text-align:center;">
-      <div style="font-size:32px; font-weight:900; color:var(--gold);">+102%</div>
+    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #B4AC9C; text-align:center;">
+      <div style="font-family:'Saira Condensed',sans-serif; font-size:34px; font-weight:800; color:#A8801C;">+102%</div>
       <div style="font-size:12px; font-weight:600; color:var(--med-gray); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px;">Entry Volume Growth<br>2024 → 2025</div>
     </div>
-    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #E8E0CC; text-align:center;">
-      <div style="font-size:32px; font-weight:900; color:var(--gold);">+22%</div>
+    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #B4AC9C; text-align:center;">
+      <div style="font-family:'Saira Condensed',sans-serif; font-size:34px; font-weight:800; color:#A8801C;">+22%</div>
       <div style="font-size:12px; font-weight:600; color:var(--med-gray); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px;">Organic Purse Growth<br>Entry-Fee Driven</div>
     </div>
-    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #E8E0CC; text-align:center;">
-      <div style="font-size:32px; font-weight:900; color:var(--gold);">+617%</div>
+    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #B4AC9C; text-align:center;">
+      <div style="font-family:'Saira Condensed',sans-serif; font-size:34px; font-weight:800; color:#A8801C;">+617%</div>
       <div style="font-size:12px; font-weight:600; color:var(--med-gray); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px;">Website Traffic YoY<br>33K Monthly Visitors</div>
     </div>
-    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #E8E0CC; text-align:center;">
-      <div style="font-size:32px; font-weight:900; color:var(--gold);">15,727</div>
+    <div style="flex:1; background:white; border-radius:10px; padding:20px; border:1px solid #B4AC9C; text-align:center;">
+      <div style="font-family:'Saira Condensed',sans-serif; font-size:34px; font-weight:800; color:#A8801C;">15,727</div>
       <div style="font-size:12px; font-weight:600; color:var(--med-gray); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px;">Social Followers<br>Zero Ad Spend</div>
     </div>
   </div>
 
-  <p class="footnote" style="margin-top:16px;">Data as of March 2026. Revenue includes entry fees, sire enrollments, and discipline unlocks.</p>
+  <p class="footnote" style="margin-top:16px;">Enrollment, record and payout figures as of October 2026.  Platform activity figures as of March 2026.  Gross revenue includes entry fees, sire enrollments, and discipline unlocks.</p>
 </div>
 
 <div class="divider"></div>
@@ -647,7 +673,7 @@
   <blockquote>
     "The Western Performance Horse industry has spent a century building the athletes, venues, and passionate stakeholders. Legendary Stakes is the first platform to give that ecosystem a monetization engine."
   </blockquote>
-  <div class="attribution">Legendary Stakes  |  Confidential Investor Materials  |  March 2026</div>
+  <div class="attribution">Legendary Stakes  |  Confidential Investor Materials  |  October 2026</div>
 </div>
 
 </body>
